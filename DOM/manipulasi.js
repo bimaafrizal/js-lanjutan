@@ -36,3 +36,17 @@ const buttons2 = document.querySelectorAll(".button");
 for(let item of buttons2) {
     item.childNodes[0].style.borderRadius = "4px";
 }
+
+
+//menambahkan elemen HTML ke DOM
+//oppendChild => menambahkan elemen html pada bagian terakhir pada element parentnya
+const newInsertElement = document.createElement("li");
+newInsertElement.innerText = "Ayo belajar!";
+const kata = document.getElementById("kata");
+kata.appendChild(newInsertElement);
+
+//insertBefore
+const elementAwal = document.createElement("li");
+elementAwal.innerText = "Bangun tidur woy!";
+const awalKata = document.getElementById("awal");
+kata.insertBefore(elementAwal, awalKata);
